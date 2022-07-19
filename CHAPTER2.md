@@ -56,7 +56,7 @@ While most small and medium-sozed applications perform a single task from beginn
 
 The following figure shows how function calls and function pointers are used in a module to add new functionality.
 
-![Figure.](image/linking_a_module_to_the_kernel.PNG)
+![Figure.](images/linking_a_module_to_the_kernel.PNG)
 
 Because no library is linked to modules, source files should never include the usual header files, <stdarg.h> and very special situations being the only exceptions. It means, only functions that are actually part of the kernel itself may be used in kernel modules. Anything related to the kernel is declared in headers found in the ekrnel source tree; most of relevant headers live in *include/linux* and *include/asm*. 
 
